@@ -5,9 +5,13 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
+    - matches:
+    - path:
+        type: PathPrefix
+        value: /world1
     - http:
         paths:
-          - path: /surprise
+          - path: /
             pathType: ImplementationSpecific
             backend:
               service:
