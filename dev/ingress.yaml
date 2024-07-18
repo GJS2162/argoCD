@@ -5,14 +5,10 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-    - matches:
-    - path:
-        type: PathPrefix
-        value: /world1
     - http:
         paths:
-          - path: /
-            pathType: ImplementationSpecific
+          - path: /world
+            pathType: Prefix #ImplementationSpecific
             backend:
               service:
                 name: nginx-service
