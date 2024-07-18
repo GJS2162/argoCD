@@ -7,7 +7,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
+          - path: /surprise
             pathType: ImplementationSpecific
             backend:
               service:
