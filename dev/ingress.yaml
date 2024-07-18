@@ -11,6 +11,6 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: myapp-service
+                name: spring-argocd-app
                 port:
                   number: 8080
