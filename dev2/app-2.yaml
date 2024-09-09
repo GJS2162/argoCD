@@ -66,5 +66,5 @@ spec:
     app: nginx-2
   ports:
     - protocol: TCP
-      port: 8081   # Expose externally on port 8081
+      port: 8081   
       targetPort: 80   # Map to container's port 80
