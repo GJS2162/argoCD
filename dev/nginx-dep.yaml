@@ -53,6 +53,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-app
+  namespace: default
+  annotations:
+    argocd.argoproj.io/tracking-id: my-argocd-application:apps/Deployment:default/nginx-app
 spec:
   replicas: 1
   selector:
